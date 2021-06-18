@@ -116,13 +116,27 @@ function deleteEvent() {
 function initButtons() {
   document.getElementById('nextButton').addEventListener('click', () => {
     nav++;
+    console.log(nav);
+    load();
+  });
+  document.getElementById('next2Button').addEventListener('click', () => {
+    nav+2;
+    console.log(nav);
     load();
   });
 
   document.getElementById('backButton').addEventListener('click', () => {
     nav--;
+    console.log(nav);
     load();
   });
+  document.getElementById('back2Button').addEventListener('click', () => {
+    (nav-2);
+    console.log(nav);
+    load();
+  });
+
+
 
   document.getElementById('saveButton').addEventListener('click', saveEvent);
   document.getElementById('cancelButton').addEventListener('click', closeModal);
