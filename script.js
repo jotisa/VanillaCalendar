@@ -120,7 +120,7 @@ function initButtons() {
     load();
   });
   document.getElementById('next2Button').addEventListener('click', () => {
-    nav+2;
+    nav=nav+2;
     console.log(nav);
     load();
   });
@@ -131,7 +131,7 @@ function initButtons() {
     load();
   });
   document.getElementById('back2Button').addEventListener('click', () => {
-    (nav-2);
+    nav=(nav-2);
     console.log(nav);
     load();
   });
