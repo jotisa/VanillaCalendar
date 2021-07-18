@@ -114,6 +114,11 @@ function deleteEvent() {
 }
 
 function initButtons() {
+    document.getElementById('backSemesterButton').addEventListener('click', () => {
+    nav-=6;
+    load();
+  });
+
   document.getElementById('nextButton').addEventListener('click', () => {
     nav++;
     load();
@@ -124,6 +129,22 @@ function initButtons() {
     load();
   });
 
+    document.getElementById('back2Button').addEventListener('click', () => {
+    nav-=2;
+    load();
+  });
+  
+    document.getElementById('next2Button').addEventListener('click', () => {
+    nav+=2;
+    load();
+  });
+
+    document.getElementById('nextSemesterButton').addEventListener('click', () => {
+    nav+=6;
+    load();
+  });
+
+  
   document.getElementById('saveButton').addEventListener('click', saveEvent);
   document.getElementById('cancelButton').addEventListener('click', closeModal);
   document.getElementById('deleteButton').addEventListener('click', deleteEvent);
