@@ -1,3 +1,4 @@
+
 let nav = 0;
 let clicked = null;
 let events = localStorage.getItem('events') ? JSON.parse(localStorage.getItem('events')) : [];
@@ -136,7 +137,16 @@ function initButtons() {
     load();
   });
 
-
+    document.getElementById('nextSemesterButton').addEventListener('click', () => {
+        nav+=6;
+        console.log(nav);
+        load();
+})
+    document.getElementById('backSemesterButton').addEventListener('click', () => {
+        nav-=6;
+        console.log(nav);
+        load();
+})
 
   document.getElementById('saveButton').addEventListener('click', saveEvent);
   document.getElementById('cancelButton').addEventListener('click', closeModal);
