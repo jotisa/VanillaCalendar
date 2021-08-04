@@ -141,12 +141,12 @@ function initButtons() {
         nav+=6;
         console.log(nav);
         load();
-})
+});
     document.getElementById('backSemesterButton').addEventListener('click', () => {
         nav-=6;
         console.log(nav);
         load();
-})
+});
 
   document.getElementById('saveButton').addEventListener('click', saveEvent);
   document.getElementById('cancelButton').addEventListener('click', closeModal);
