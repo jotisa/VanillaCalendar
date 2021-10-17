@@ -138,12 +138,12 @@ function initButtons() {
   });
 
     document.getElementById('nextSemesterButton').addEventListener('click', () => {
-        nav+=6;
+        (nav=(nav+6));
         console.log(nav);
         load();
 });
     document.getElementById('backSemesterButton').addEventListener('click', () => {
-        nav-=6;
+        (nav=(nav-6));
         console.log(nav);
         load();
 });
